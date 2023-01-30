@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>解决Vue中调用UI组件无法自定义样式问题</title>
+      <link href="/2023/01/30/%E8%A7%A3%E5%86%B3Vue%E4%B8%AD%E8%B0%83%E7%94%A8UI%E7%BB%84%E4%BB%B6%E6%97%A0%E6%B3%95%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98/"/>
+      <url>/2023/01/30/%E8%A7%A3%E5%86%B3Vue%E4%B8%AD%E8%B0%83%E7%94%A8UI%E7%BB%84%E4%BB%B6%E6%97%A0%E6%B3%95%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%B7%E5%BC%8F%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<h3 id="解决Vue中调用UI组件无法自定义样式问题"><a href="#解决Vue中调用UI组件无法自定义样式问题" class="headerlink" title="解决Vue中调用UI组件无法自定义样式问题"></a>解决Vue中调用UI组件无法自定义样式问题</h3><blockquote><p>今天在使用iView的折叠面板组件的时候，发现直接使用类名选择器无法对其默认样式进行修改，默认样式如下图<br><img src="https://img-blog.csdnimg.cn/c381335966284b769ad933e8afe21b97.png" alt="默认样式"></p></blockquote><h4 id="使用-x2F-deep-x2F-解决"><a href="#使用-x2F-deep-x2F-解决" class="headerlink" title="使用 &#x2F;deep&#x2F; 解决"></a>使用 &#x2F;deep&#x2F; 解决</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">/deep/ <span class="selector-class">.ivu-collapse-header</span> &#123; <span class="comment">/* 使用/deep/进行样式穿透 */</span></span><br><span class="line">    <span class="attribute">display</span>: flex;</span><br><span class="line">    <span class="attribute">align-items</span>: center;</span><br><span class="line"></span><br><span class="line">     <span class="selector-class">.ivu-icon</span> &#123;</span><br><span class="line">        <span class="attribute">font-size</span>: <span class="number">16px</span>;</span><br><span class="line">        <span class="attribute">color</span>: <span class="number">#000</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><blockquote><p>解决后样式如下所示图<img src="https://img-blog.csdnimg.cn/b4e2431c0be34a48afdf22951a2ea269.png" alt="在这里插入图片描述"></p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> ⌨ 学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue,教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>第一篇文章</title>
       <link href="/2023/01/28/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/"/>
       <url>/2023/01/28/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
